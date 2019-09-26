@@ -12,17 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/ganges/PlatformConfig.mk
+include device/sony/ganges-common/PlatformConfig.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %i3213,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := I3213
-else ifneq (,$(filter %i4213,$(TARGET_PRODUCT)))
-TARGET_BOOTLOADER_BOARD_NAME := I4213
-else
-TARGET_BOOTLOADER_BOARD_NAME := I3213
-$(warning Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)", using default value: "$(TARGET_BOOTLOADER_BOARD_NAME)")
-endif
+
 
 # Platform
 PRODUCT_PLATFORM := ganges

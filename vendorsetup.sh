@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_i3213-eng
-add_lunch_combo aosp_i3213-userdebug
-add_lunch_combo aosp_i4213-eng
-add_lunch_combo aosp_i4213-userdebug
+add_lunch_combo lineage_mermaid-eng
+add_lunch_combo lineage_mermaid-userdebug
+add_lunch_combo lineage_mermaid-user
+
